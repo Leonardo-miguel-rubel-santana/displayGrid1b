@@ -1,20 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Display Grid</title>
-</head>
-<body>
-    <div class="produtos"
-    <h1>Nossos produtos</h1>
-    </div class="grid">
-    <div>
-        
-    </div>
-    <div>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: cyan;
+            display: flex
+            flex-direction:table-column;
+            aling-items: center;
+            
+        }
 
-</div>
-    
+        .produtos{
+            position: relative;
+            width: 100%;
+            padding: 20px;
+            color: #000000;
+        }
+        .grid{
+            position: relative;
+            display: grid; 
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        
+        }
+    </style>
+</head>
+
+<body>
+    <div class="produtos">
+        <h1>Nossos produtos</h1>
+        <div class="grid">
+            <div class="item">
+                <h2>nome</h2>
+                <img class="imagem produto" src="img/teste.jpg">
+                <P> Tamanho</P>
+                <P> Preço: R$></P>
+            </div>
+            <div class="item">
+                <h2>nome</h2>
+                <img class="imagem produto" src="img/teste.jpg">
+                <P> Tamanho</P>
+                <P> Preço: R$></P>
+            </div>
+            <div class="item">
+                <h2>nome</h2>
+                <img class="imagem produto" src="img/teste.jpg">
+                <P> Tamanho</P>
+                <P> Preço: R$></P>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
